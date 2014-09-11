@@ -19,6 +19,7 @@
 		132BABE519C11F1C007C8ECD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132BABCD19C11F1C007C8ECD /* UIKit.framework */; };
 		132BABED19C11F1C007C8ECD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 132BABEB19C11F1C007C8ECD /* InfoPlist.strings */; };
 		132BABEF19C11F1C007C8ECD /* ViewControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132BABEE19C11F1C007C8ECD /* ViewControlTests.m */; };
+		132BABFA19C121C7007C8ECD /* AMSImpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 132BABF919C121C7007C8ECD /* AMSImpleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		132BABEA19C11F1C007C8ECD /* ViewControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControlTests-Info.plist"; sourceTree = "<group>"; };
 		132BABEC19C11F1C007C8ECD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		132BABEE19C11F1C007C8ECD /* ViewControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControlTests.m; sourceTree = "<group>"; };
+		132BABF819C121C7007C8ECD /* AMSImpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSImpleView.h; sourceTree = "<group>"; };
+		132BABF919C121C7007C8ECD /* AMSImpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSImpleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				132BABD819C11F1C007C8ECD /* AMAppDelegate.h */,
 				132BABD919C11F1C007C8ECD /* AMAppDelegate.m */,
+				132BABF819C121C7007C8ECD /* AMSImpleView.h */,
+				132BABF919C121C7007C8ECD /* AMSImpleView.m */,
 				132BABDB19C11F1C007C8ECD /* Images.xcassets */,
 				132BABD019C11F1C007C8ECD /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				132BABDA19C11F1C007C8ECD /* AMAppDelegate.m in Sources */,
 				132BABD619C11F1C007C8ECD /* main.m in Sources */,
+				132BABFA19C121C7007C8ECD /* AMSImpleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewControl/ViewControl-Prefix.pch";
 				INFOPLIST_FILE = "ViewControl/ViewControl-Info.plist";
@@ -373,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewControl/ViewControl-Prefix.pch";
 				INFOPLIST_FILE = "ViewControl/ViewControl-Info.plist";

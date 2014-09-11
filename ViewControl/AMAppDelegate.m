@@ -6,17 +6,38 @@
 //  Copyright (c) 2014 Alejandro Mendoza. All rights reserved.
 //
 
+#import "AMSimpleView.h"
 #import "AMAppDelegate.h"
+
 
 @implementation AMAppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+
+    // create view
+    CGRect frame1 = CGRectMake(50, 50, 100, 100);
+    AMSImpleView* view1 = [[AMSImpleView alloc] initWithFrame:frame1];
+    view1.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:view1];
+    
+    
+    
+    // create view
+    CGRect frame2 = CGRectMake(20, 20, 50, 50);
+    AMSImpleView* view2 = [[AMSImpleView alloc] initWithFrame:frame2];
+    view2.backgroundColor = [UIColor blueColor];
+    [view1 addSubview:view2];
+    
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
